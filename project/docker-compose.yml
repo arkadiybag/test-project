@@ -4,6 +4,7 @@ services:
     build: ./api
     volumes:
       - /app
+    restart: always
 
   nginx_main:
     build: ./nginx
@@ -11,3 +12,4 @@ services:
       - "80:80"
     volumes_from:
       - api_main:rw
+    restart: always

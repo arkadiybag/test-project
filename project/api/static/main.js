@@ -1,5 +1,5 @@
 function start() {
-    ws = new WebSocket('ws://127.0.0.1/ws/');
+    ws = new WebSocket('ws://' + window.location.host + '/ws/');
     main = document.getElementById('main');
 
     ws.onmessage = function (text) {

@@ -2,4 +2,4 @@
 *.pyc
 __*
 *xml
-project/.idea*
+*idea*

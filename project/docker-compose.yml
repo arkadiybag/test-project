@@ -1,0 +1,13 @@
+version: '2'
+services:
+  api_main:
+    build: ./api
+    volumes:
+      - /app
+
+  nginx_main:
+    build: ./nginx
+    ports:
+      - "80:80"
+    volumes_from:
+      - api_main:rw
